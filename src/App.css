@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap'); /* For vintage, elegant font */
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Global font and body styling */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2C1D15; /* Dark steampunk background */
+  font-family: 'Playfair Display', serif;
+  
+  color: #FFD700; /* Golden text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: ;
+}
+
+.ticker_containerbox {
+  background-image: url('./images/punk.jpeg');   
+  background-color: #0a0502;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  padding: 20px;
+  border: 3px solid #8B5E3C; /* Copper-gold border */
+  box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+}
+
+
+.ticker-container {
+  background-color: #3C2B1E; /* Darker brown */
+
+  border: 3px solid #8B5E3C; /* Copper-gold border */
+  box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  width: 200px;
+  
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker-header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #F5DEB3; /* Lighter gold */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ticker-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFD700; /* Bright gold */
+  text-shadow: 0 0 10px #B8860B, 0 0 20px #DAA520;
+}
+
+.ticker-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #8B4513,
+    #8B4513 10px,
+    #3C2B1E 10px,
+    #3C2B1E 20px
+  );
+}
+
+.gear {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #A0522D; /* Copper */
+  border: 3px solid #8B5E3C;
+  border-radius: 50%;
+  top: 10px;
+  animation: spin 10s linear infinite;
+}
+
+.gear-left {
+  left: 10px;
+}
+
+.gear-right {
+  right: 10px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
