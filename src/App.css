@@ -50,7 +50,7 @@ body {
 }
 
 .ticker_containerbox {
-  background-image: url('./images/punk.jpeg');   
+  background-image: url('/images/punk.jpeg');   
   background-color: #0a0502;
   background-attachment: scroll;
   background-repeat: no-repeat;
